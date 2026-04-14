@@ -1,79 +1,61 @@
-# 🧠 AI-Powered Smart Iron with Fabric Classification
+# AI-Powered Smart Iron with Fabric Classification
 
-An intelligent IoT-based system that automatically classifies fabric types and recommends optimal ironing temperature using Machine Learning and real-time sensor data.
-
----
-
-## 🚀 Overview
-
-This project integrates **IoT + AI/ML** to build a smart ironing system.  
-It collects real-time data (temperature, motion, static time) using sensors and uses a **Voting Ensemble Machine Learning model** to classify fabrics such as Cotton, Silk, Wool, Polyester, and detect anomalies.
+## Overview
+This project presents an intelligent IoT-based smart ironing system that integrates machine learning to automatically classify fabric types and recommend optimal temperature settings. The system leverages real-time sensor data and a robust ensemble learning model to enhance safety, efficiency, and user convenience.
 
 ---
 
-## 🎯 Key Features
-
-- 🔍 Real-time fabric classification using ML
-- 🌡️ Intelligent temperature recommendation
-- 📡 IoT-based data collection using ESP8266
-- ☁️ Cloud integration with ThingSpeak
-- 🌐 Web dashboard for monitoring
-- ⚡ High accuracy using ensemble learning
+## Key Features
+- Real-time fabric classification using machine learning  
+- Intelligent temperature recommendation based on fabric type  
+- IoT-based data acquisition using ESP8266 (NodeMCU)  
+- Cloud integration for monitoring and data visualization  
+- Web-based dashboard for real-time insights  
+- High accuracy using Voting Ensemble model  
 
 ---
 
-## 🛠️ Tech Stack
+## Technology Stack
 
 ### Hardware
-- ESP8266 (NodeMCU)
-- LM35 Temperature Sensor
-- MPU6050 (Accelerometer + Gyroscope)
+- ESP8266 (NodeMCU)  
+- LM35 Temperature Sensor  
+- MPU6050 (Accelerometer & Gyroscope)  
 
 ### Software
-- Python
-- Flask
-- Scikit-learn
-- HTML, CSS, JavaScript
-- ThingSpeak Cloud
+- Python  
+- Flask (Backend API)  
+- Scikit-learn (Machine Learning)  
+- HTML, CSS, JavaScript (Frontend)  
+- ThingSpeak (Cloud Platform)  
 
 ---
 
-## 🧠 Machine Learning Model
+## Machine Learning Model
+The system utilizes a **Voting Ensemble (Soft Voting Classifier)** combining multiple algorithms to achieve high accuracy and reliability.
 
-- **Model Type:** Voting Ensemble (Soft Voting)
-- **Algorithms Used:**
-  - Random Forest
-  - Extra Trees
-  - Gradient Boosting
-  - Support Vector Machine (SVM)
-- **Techniques:**
-  - Feature Engineering
-  - Cross Validation (Stratified K-Fold)
-  - Model Optimization
+**Algorithms Used:**
+- Random Forest  
+- Extra Trees  
+- Gradient Boosting  
+- Support Vector Machine (SVM)  
 
----
-
-## 🔄 System Workflow
-
-1. Sensor data collection (Temperature, Motion, Static Time)
-2. Data preprocessing & feature extraction
-3. ML model prediction
-4. Fabric classification output
-5. Temperature recommendation
-6. Display on web dashboard & cloud upload
+**Techniques Applied:**
+- Feature Engineering (e.g., Heat Exposure Index, Ratios, Log Transformations)  
+- Stratified Cross-Validation  
+- Model Evaluation using Accuracy, Precision, Recall, and F1-score  
 
 ---
 
-## 📊 Dataset
-
-- Custom dataset generated using real-time sensor readings
-- Features:
-  - Temperature_C
-  - Motion_Variation
-  - Static_Time_s
-- Target:
-  - Fabric_Type (Cotton, Silk, Wool, Polyester, Anomaly)
+## System Workflow
+1. Sensor data acquisition (Temperature, Motion, Static Time)  
+2. Data preprocessing and feature extraction  
+3. Machine learning model prediction  
+4. Fabric classification output generation  
+5. Temperature recommendation  
+6. Data visualization on web dashboard and cloud  
 
 ---
 
-## 📁 Project Structure
+
+## Project Structure
